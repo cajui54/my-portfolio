@@ -1,0 +1,35 @@
+body{
+    background-color: #282c34;
+}
+
+header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section{
+    font-family: 'Cabin', sans-serif;
+    transform: translateY(95px);
+    margin: 0 auto;
+}
+.section-skill{
+    width: 90%;
+    min-height: 500px;
+}
+.container-title{
+    position: relative;
+    top: 50px;
+    letter-spacing: 1.5px;
+}
+section .subtitulo2{
+    color: #fff;
+    font-size: 1.2rem;
+}
+section .subtitulo3{
+    background: -webkit-linear-gradient(-45deg, #8257E6, #f588ec, #5515e9, #ea5c82) no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    font-size: 2rem;
+    margin: 5px;
+}
+

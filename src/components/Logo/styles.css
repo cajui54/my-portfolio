@@ -1,0 +1,21 @@
+.containerLogo{
+    border-radius: 2px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    transition: all .7s ease-in;
+    transform: translateX(20px);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerLogo p {
+    color:#8257E6;
+    letter-spacing: 1.9px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 0 0 2px rgb(225, 125, 125);
+}

@@ -1,0 +1,15 @@
+.nav-menu{
+    position: absolute;
+    transform: translate(1150px,55vh);
+    margin-top: -20px;
+    padding: 0;
+    background-color: rgba(44, 44, 45, .9);
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    transition: all .6s ease-in;
+}
+
+.openNav{
+    transform: translate(0,55vh);
+}

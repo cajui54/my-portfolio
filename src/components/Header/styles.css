@@ -1,0 +1,12 @@
+.headerMain{
+  background-image: linear-gradient(to bottom, rgb(14, 14, 14) 40%, rgba(43, 41, 41, 0.5));
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 3;
+}

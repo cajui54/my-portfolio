@@ -1,0 +1,71 @@
+.menu-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+    transform: translateX(-20px);
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__buger{
+    animation: animationGradient 10s ease infinite;
+    background: linear-gradient(-45deg, #8257E6, #f588ec, #5515e9, #ea5c82) no-repeat;
+    background-size: 300% 300%;
+    width: 50px;
+    height: 6px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 2px 5px, rgba(255,101,47,.2);
+}
+.menu-btn__buger::before, .menu-btn__buger::after{
+    content: '';
+    animation: animationGradient 10s ease infinite;
+    background: linear-gradient(-45deg, #8257E6, #f588ec, #5515e9, #ea5c82) no-repeat;
+    background-size: 300% 300%;
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    margin-left: -25px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);;
+}
+@keyframes animationGradient {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.menu-btn__buger::before{
+    transform: translateY(-15px);
+    
+}
+.menu-btn__buger::after{
+    transform: translateY(15px);
+}
+.menu-btn.open .menu-btn__buger{
+    transform: translateX(-50px);
+    background: linear-gradient(to top, black, transparent);
+    box-shadow: none;
+}
+
+/*Animation*/
+.menu-btn.open .menu-btn__buger{
+    transform: translateX(-50px);
+    background-color: transparent;
+    box-shadow: none;
+}
+.menu-btn.open .menu-btn__buger::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__buger::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+}
